@@ -1,0 +1,161 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    font-family:'Cormorant Garamond', serif;
+
+    background:#07111f;
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+/* ===========================
+   ESCENAS
+=========================== */
+
+.scene{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.scene.active{
+
+    display:flex;
+
+}
+
+/* ===========================
+   FONDO
+=========================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+        radial-gradient(white 1px, transparent 1px);
+
+    background-size:120px 120px;
+
+    opacity:.8;
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    top:60px;
+
+    right:80px;
+
+    background:#fff7d1;
+
+    box-shadow:
+        0 0 40px white,
+        0 0 80px rgba(255,255,255,.5);
+
+    z-index:-1;
+
+}
+/* ===========================
+   PORTADA
+=========================== */
+
+.hero{
+
+    text-align:center;
+
+    max-width:900px;
+
+    padding:40px;
+
+}
+
+.hero h1{
+
+    font-family:'Cinzel', serif;
+
+    font-size:72px;
+
+    color:#e8c96c;
+
+    margin-bottom:25px;
+
+}
+
+.subtitle{
+
+    font-size:28px;
+
+    color:#f1f1f1;
+
+    margin-bottom:60px;
+
+    line-height:42px;
+
+}
+
+#start{
+
+    padding:18px 55px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    font-family:'Cinzel', serif;
+
+    background:linear-gradient(45deg,#d4af37,#ffe88c,#d4af37);
+
+    transition:.3s;
+
+}
+
+#start:hover{
+
+    transform:scale(1.08);
+
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestro Pequeño Universo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+PORTADA
+=========================== -->
+
+<section id="intro" class="scene active">
+
+    <div class="hero">
+
+        <h1>Nuestro Pequeño Universo</h1>
+
+        <p class="subtitle">
+            Un viaje por algunos recuerdos que nunca quiero olvidar.
+        </p>
+
+        <button id="start">
+            ✨ Comenzar el viaje ✨
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+LIBRO
+=========================== -->
+
+<section id="bookSection" class="scene">
+
+    <div class="book">
+
+        <!-- Página 1 -->
+
+        <div class="page activePage" id="page1">
+
+            <h1>Prólogo</h1>
+
+            <p>
+                Todo comenzó en el colegio...
+            </p>
+
+            <p>
+                Nunca imaginé que una simple conversación terminaría convirtiéndose en tantos recuerdos.
+            </p>
+
+            <button id="openBook">
+                Abrir el libro
+                <svg class="icon-right" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+        </div>
+
+        <!-- Página 2 -->
+
+        <div class="page" id="page2">
+
+    <h1>📖 A través de mi ventana</h1>
+
+    <div class="content">
+
+        <div class="media">
+
+            <img src="img/atraves/foto1.jpg" class="photo">
+
+        </div>
+
+        <div class="text">
+
+            <p class="story">
+                Gracias a este libro empezamos a hablar mucho más. Fue como el inicio de muchas conversaciones sobre libros y cosas que nos gustan.
+            </p>
+
+            <p class="story">
+                Sin darnos cuenta, se volvió una forma de acercarnos y de compartir más momentos hablando.
+            </p>
+
+        </div>
+
+        </div> <!-- Fin content -->
+
+<div class="buttons">
+
+    <button id="backToPage1">
+        <svg class="icon-left" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Anterior
+    </button>
+
+    <button id="goToPage2">
+        Harry Potter
+        <svg class="icon-right" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+</div>
+
+</div> <!-- Fin page2 -->
+        <!-- Página 3 -->
+
+<div class="page" id="page3">
+
+    <h1>🎇 Harry Potter</h1>
+
+    <div class="content">
+
+        <div class="media">
+
+            <video class="photo" autoplay muted loop playsinline>
+
+                <source src="videos/harry/recuerdo.mp4" type="video/mp4">
+
+                Tu navegador no soporta videos.
+
+            </video>
+
+        </div>
+
+        <div class="text">
+
+            <p class="story">
+                Yo siempre pensé que esta saga no era para mí, incluso creía que no me iba a gustar.
+            </p>
+
+            <p class="story">
+                Pero tú me dijiste que le diera una oportunidad… y te hice caso.
+            </p>
+
+            <p class="story">
+                Al final terminé descubriendo una historia increíble, que ahora es de mis favoritas. Todo cambió gracias a ti.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button id="backToPage2">
+                <svg class="icon-left" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Anterior
+            </button>
+
+        <button id="goToPage4">
+            El hombre de las manos de tijera
+            <svg class="icon-right" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+    </div>
+
+</div>
+<!-- Página 4 -->
+
+<div class="page" id="page4">
+
+    <h1>✂️ El hombre de las manos de tijera</h1>
+
+    <div class="content">
+
+        <div class="text">
+
+            <p class="story">
+                Esta película me la recomendaste tú y cuando la vi, no supe bien cómo explicarlo.
+            </p>
+
+            <p class="story">
+                Simplemente me gustó demasiado.
+            </p>
+
+            <p class="story">
+                Es de esas historias que no solo se ven, sino que se sienten.
+            </p>
+
+            <p class="story">
+                Me dejó algo especial.
+            </p>
+
+        </div>
+
+        <div class="media">
+
+            <img src="img/edward/foto1.jpg" class="photo">
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button id="backToPage3">
+           <svg class="icon-left" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+           Harry Potter
+        </button>
+
+          <button id="goToPage5">
+              Nuestro álbum
+              <svg class="icon-right" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+    </div>
+
+    </div>
+
+<!-- Página 5 -->
+
+<div class="page" id="page5">
+
+    <h1>📚 Nuestro álbum</h1>
+
+    <div class="content">
+
+        <div class="text">
+
+            <div class="album-note">
+                <p>Detrás de cada una de estas fotos hay algo más que imágenes. Son momentos que no se pueden repetir, conversaciones que surgieron sin planearse y recuerdos que quedaron guardados de forma especial.</p>
+
+                <p>Cada foto representa una etapa, una risa, una charla o un instante que, aunque parezca simple, tiene un valor importante. Son pequeñas partes de algo más grande que se fue formando con el tiempo.</p>
+
+                <p>No son solo fotos... son recuerdos que tienen un significado que va más allá de lo que se ve.</p>
+
+                <p class="signature">con amor, siempre</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button id="backToPage4">
+            <svg class="icon-left" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Anterior
+        </button>
+
+        <button id="goToPage6">
+            Ver fotos
+            <svg class="icon-right" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+    </div>
+
+    </div>
+
+<div class="page" id="page6">
+
+    <h1>📸 Fotos del álbum</h1>
+
+    <div class="content">
+
+        <div class="media album-media">
+            <div class="photo-grid large">
+                <img src="img/polaroids/p1.jpg" class="photo" alt="foto 1">
+                <img src="img/polaroids/p2.jpg" class="photo" alt="foto 2">
+                <img src="img/polaroids/p3.jpg" class="photo" alt="foto 3">
+                <img src="img/polaroids/p4.jpg" class="photo" alt="foto 4">
+                <img src="img/polaroids/p5.jpeg" class="photo" alt="foto 5">
+                <img src="img/polaroids/p6.jpeg" class="photo" alt="foto 6">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button id="backToPage5">
+            <svg class="icon-left" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Atrás
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+    <div class="music-player fixed" aria-hidden="false">
+        <audio id="albumAudio" src="music/musicbloom-the-paper-kites.mp3" preload="none"></audio>
+        <button id="musicToggle" class="music-btn" aria-label="Reproducir música">
+            <span class="music-icon">♪</span>
+            <span class="music-title">Bloom — The Paper Kites</span>
+            <span class="music-play">▶</span>
+            <span class="music-dot" aria-hidden="true"></span>
+        </button>
+    </div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
