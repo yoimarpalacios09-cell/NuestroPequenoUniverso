@@ -4,8 +4,9 @@
 
 .book{
 
-    width:1000px;
-    height:680px;
+    width:100%;
+    max-width:1000px;
+    min-height:680px;
 
     background:linear-gradient(to right,#e8dcc0,#f8f1dc,#e8dcc0);
 
@@ -464,6 +465,131 @@ video.photo{
     0%{ transform:scale(0.9); box-shadow:0 0 0 0 rgba(232,200,91,0.6); }
     50%{ transform:scale(1); box-shadow:0 0 12px 6px rgba(232,200,91,0.08); }
     100%{ transform:scale(0.9); box-shadow:0 0 0 0 rgba(232,200,91,0.0); }
+}
+
+@media (max-width: 1024px) {
+    body {
+        overflow:auto;
+    }
+
+    .book {
+        min-height: auto;
+        height:auto;
+        width:92vw;
+        max-width:920px;
+    }
+
+    .page {
+        padding:30px;
+    }
+
+    .page p,
+    .story {
+        font-size:22px;
+        line-height:34px;
+    }
+
+    .page h1 {
+        font-size:34px;
+    }
+
+    .content {
+        flex-direction:column;
+        gap:24px;
+    }
+
+    .text {
+        width:100%;
+    }
+
+    .photo,
+    video.photo {
+        width:100%;
+        max-height:none;
+    }
+
+    .photo-grid.large,
+    .photo-grid {
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .photo-grid.large {
+        grid-auto-rows:170px;
+        max-width:100%;
+    }
+
+    .buttons {
+        flex-direction:column;
+        align-items:center;
+        gap:14px;
+    }
+
+    .music-player.fixed {
+        width:calc(100vw - 24px);
+        max-width:520px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        padding:24px;
+    }
+
+    .hero h1 {
+        font-size:44px;
+    }
+
+    .subtitle {
+        font-size:20px;
+        line-height:30px;
+        margin-bottom:40px;
+    }
+
+    #start {
+        padding:14px 28px;
+        font-size:18px;
+    }
+
+    .book {
+        border-radius:0;
+        box-shadow:none;
+        width:100vw;
+    }
+
+    .page {
+        padding:18px;
+    }
+
+    .page p,
+    .story {
+        font-size:18px;
+        line-height:28px;
+    }
+
+    .photo-grid.large,
+    .photo-grid {
+        grid-template-columns:1fr;
+    }
+
+    .photo-grid.large {
+        grid-auto-rows:220px;
+    }
+
+    .music-player.fixed {
+        width:calc(100vw - 24px);
+        bottom:14px;
+    }
+
+    .music-title {
+        display:none;
+    }
+
+    .buttons button {
+        width:100%;
+        justify-content:center;
+    }
 }
 
 /* Iconos de flecha en los botones */
