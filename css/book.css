@@ -564,19 +564,23 @@ video.photo{
     .book {
         border-radius:18px;
         box-shadow:none;
-        width:calc(100vw - 16px);
+        width:100vw;
         max-width:100%;
-        margin:0 auto;
+        margin:0;
     }
 
     .page {
         padding:14px;
+        width:100%;
+        max-width:100%;
     }
 
     .page p,
     .story {
         font-size:18px;
         line-height:28px;
+        max-width:100%;
+        width:100%;
     }
 
     .content {
