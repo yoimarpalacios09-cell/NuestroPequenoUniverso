@@ -475,18 +475,20 @@ video.photo{
     .book {
         min-height: auto;
         height:auto;
-        width:92vw;
+        width:calc(100vw - 24px);
         max-width:920px;
+        margin:0 auto;
     }
 
     .page {
-        padding:30px;
+        padding:24px;
     }
 
     .page p,
     .story {
         font-size:22px;
         line-height:34px;
+        max-width:100%;
     }
 
     .page h1 {
@@ -496,6 +498,7 @@ video.photo{
     .content {
         flex-direction:column;
         gap:24px;
+        width:100%;
     }
 
     .text {
@@ -511,6 +514,8 @@ video.photo{
     .photo-grid.large,
     .photo-grid {
         grid-template-columns:repeat(2,1fr);
+        width:100%;
+        gap:12px;
     }
 
     .photo-grid.large {
@@ -533,6 +538,10 @@ video.photo{
 }
 
 @media (max-width: 640px) {
+    body {
+        overflow:auto;
+    }
+
     .hero {
         padding:24px;
     }
@@ -553,13 +562,15 @@ video.photo{
     }
 
     .book {
-        border-radius:0;
+        border-radius:18px;
         box-shadow:none;
-        width:100vw;
+        width:calc(100vw - 16px);
+        max-width:100%;
+        margin:0 auto;
     }
 
     .page {
-        padding:18px;
+        padding:14px;
     }
 
     .page p,
@@ -568,22 +579,41 @@ video.photo{
         line-height:28px;
     }
 
+    .content {
+        width:100%;
+    }
+
     .photo-grid.large,
     .photo-grid {
         grid-template-columns:1fr;
+        gap:10px;
+        width:100%;
     }
 
     .photo-grid.large {
         grid-auto-rows:220px;
     }
 
+    .photo,
+    video.photo {
+        width:100%;
+        max-height:none;
+    }
+
     .music-player.fixed {
-        width:calc(100vw - 24px);
+        width:calc(100vw - 16px);
         bottom:14px;
+        left:50%;
+        transform:translateX(-50%);
     }
 
     .music-title {
         display:none;
+    }
+
+    .buttons {
+        width:100%;
+        gap:12px;
     }
 
     .buttons button {
