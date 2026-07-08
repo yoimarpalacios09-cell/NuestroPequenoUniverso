@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenida Madelyn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="landing-screen" id="introScreen">
+      <div class="top-bar">
+        <div class="crest">M</div>
+        <button class="ghost-btn" id="startBtn">INICIAR</button>
+      </div>
+      <div class="door-overlay" id="doorOverlay">
+        <div class="door left"></div>
+        <div class="door right"></div>
+        <div class="door-glow"></div>
+      </div>
+      <div class="landing-content">
+        <div class="landing-copy">
+          <p class="eyebrow">Bienvenida</p>
+          <h1>Madelyn</h1>
+          <p>Una carta ha llegado para ti. Prepárate para comenzar una aventura mágica.</p>
+          <button class="primary-btn" id="startBtnSecondary">Abrir la carta</button>
+        </div>
+        <div class="landing-visual">
+          <div class="castle"></div>
+          <div class="owl"></div>
+          <div class="letter"></div>
+        </div>
+      </div>
+      <p class="landing-footer">La magia está en todas partes, solo hay que saber dónde buscarla.</p>
+    </div>
+
+    <main class="page" id="mainPage">
+      <section class="hero card">
+        <div class="hero-copy">
+          <p class="eyebrow">Una sorpresa mágica para ti</p>
+          <h2>Querida Madelyn</h2>
+          <p>
+            Dicen que la magia aparece cuando menos la esperas. Hoy no vienes a
+            aprender hechizos... vienes a descubrir una pequeña aventura creada
+            especialmente para ti.
+          </p>
+          <button class="primary-btn" id="scrollLetterBtn">Abrir carta</button>
+        </div>
+        <div class="envelope">
+          <div class="seal"></div>
+        </div>
+      </section>
+
+      <section class="card letter-card">
+        <div class="letter-paper">
+          <p class="letter-title">Querida Madelyn:</p>
+          <p>
+            Dicen que la magia aparece cuando menos la esperas. Hoy no vienes a
+            aprender hechizos... vienes a descubrir una pequeña aventura que alguien creó
+            especialmente para ti.
+          </p>
+          <p>Bienvenida.</p>
+          <p class="signature">— Una amiga que cree en tu magia</p>
+        </div>
+      </section>
+
+      <section class="card" id="sortingHatSection">
+        <div class="section-heading">
+          <p class="eyebrow">El sombrero tiene una respuesta</p>
+          <h3>El Sombrero Seleccionador</h3>
+          <p>Elige una casa si ya sabes a cuál perteneces, o deja que el sombrero decida.</p>
+        </div>
+
+        <div class="house-picker">
+          <button class="house-btn gryffindor" data-house="Gryffindor">Gryffindor</button>
+          <button class="house-btn hufflepuff" data-house="Hufflepuff">Hufflepuff</button>
+          <button class="house-btn ravenclaw" data-house="Ravenclaw">Ravenclaw</button>
+          <button class="house-btn slytherin" data-house="Slytherin">Slytherin</button>
+        </div>
+
+        <div class="sorting-hat">
+          <div class="hat-emoji">🎩</div>
+          <div class="quiz-area">
+            <h4 id="questionTitle">¿Qué valoras más?</h4>
+            <div class="options" id="options"></div>
+          </div>
+          <div class="result-card" id="houseResult">
+            <p>Tu casa aparecerá aquí.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="mapSection">
+        <div class="section-heading">
+          <p class="eyebrow">Mapa del Merodeador</p>
+          <h3>Explora los lugares mágicos</h3>
+        </div>
+        <div class="map-grid">
+          <button class="map-card active" data-place="library">
+            <span>📚</span>
+            <strong>Biblioteca</strong>
+          </button>
+          <button class="map-card" data-place="greatHall">
+            <span>⚡</span>
+            <strong>Gran Comedor</strong>
+          </button>
+          <button class="map-card" data-place="astronomy">
+            <span>🌙</span>
+            <strong>Torre de Astronomía</strong>
+          </button>
+          <button class="map-card" data-place="owlery">
+            <span>🦉</span>
+            <strong>Lechucería</strong>
+          </button>
+        </div>
+        <div class="map-detail" id="mapDetail">
+          <h4>Biblioteca</h4>
+          <p>Aquí encontrarás algunos secretos escondidos entre páginas y estrellas.</p>
+        </div>
+      </section>
+
+      <section class="card" id="potionsSection">
+        <div class="section-heading">
+          <p class="eyebrow">Frascos de pociones</p>
+          <h3>Elige una poción</h3>
+        </div>
+        <div class="potions-grid">
+          <button class="potion" data-potion="happiness">
+            <span class="potion-bottle green"></span>
+            <strong>Felicidad</strong>
+          </button>
+          <button class="potion" data-potion="courage">
+            <span class="potion-bottle blue"></span>
+            <strong>Valentía</strong>
+          </button>
+          <button class="potion" data-potion="luck">
+            <span class="potion-bottle purple"></span>
+            <strong>Suerte</strong>
+          </button>
+        </div>
+        <div class="potion-message" id="potionMessage">Haz clic en un frasco.</div>
+      </section>
+
+      <section class="card" id="patronusSection">
+        <div class="section-heading">
+          <p class="eyebrow">Tu patronus</p>
+          <h3>Descubre tu espíritu protector</h3>
+        </div>
+        <button class="primary-btn" id="patronusBtn">Descubrir mi Patronus</button>
+        <div class="patronus-result" id="patronusResult">✧</div>
+      </section>
+
+      <section class="card" id="reliquiasSection">
+        <div class="section-heading">
+          <p class="eyebrow">Reliquias de la Muerte</p>
+          <h3>Tres objetos, una gran lección</h3>
+        </div>
+        <div class="relics-grid">
+          <div class="relic-card">
+            <span>🧥</span>
+            <h4>La capa</h4>
+            <p>Protege los momentos especiales.</p>
+          </div>
+          <div class="relic-card">
+            <span>💎</span>
+            <h4>La piedra</h4>
+            <p>Los recuerdos nunca desaparecen.</p>
+          </div>
+          <div class="relic-card">
+            <span>🪄</span>
+            <h4>La varita</h4>
+            <p>La verdadera magia está en las personas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card final-card">
+        <h3>Fin del recorrido</h3>
+        <p>
+          No hace falta una carta de Hogwarts para encontrar personas especiales. A veces la
+          magia está en los pequeños detalles, y esta página es uno de ellos. Espero que te
+          haya sacado una sonrisa.
+        </p>
+        <button class="primary-btn" id="finishBtn">Fin del recorrido</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
